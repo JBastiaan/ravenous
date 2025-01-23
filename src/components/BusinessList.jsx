@@ -1,4 +1,4 @@
-import styles from './BusinessList.module.css';
+import styles from '../css/BusinessList.module.css';
 import Business from './Business';
 
 const BusinessList = ({ businesses = [] }) => {

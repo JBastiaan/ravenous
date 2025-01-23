@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './Searchbar.module.css';
+import styles from '../css/Searchbar.module.css';
 
 const sortingOptions = [
   { id: 'best_match', name: 'Best Match' },

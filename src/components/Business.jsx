@@ -1,7 +1,7 @@
-import styles from './Business.module.css';
+import styles from '../css/Business.module.css';
 
 const defaultBusiness = {
-  imageSrc: '/restaurant_default.jpg',
+  imageSrc: '/src/assets/restaurant_default.jpg',
   name: 'Sample Restaurant',
   address: '123 Main Street',
   city: 'New York',
@@ -15,7 +15,7 @@ const defaultBusiness = {
 const Business = ({ business }) => {
   // Use default business only if business prop is undefined, null, or empty object
   const businessData = Object.keys(business || {}).length === 0 ? defaultBusiness : business;
-
+  console.log(businessData);
   return (
     <div className={styles.business}>
       <img 
