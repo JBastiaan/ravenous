@@ -1,0 +1,58 @@
+.business {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px;
+}
+
+.name {
+  margin: 0 0 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #d4001a;
+}
+
+.address {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.category {
+  margin: 15px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.ratingReviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.rating {
+  color: #f4c150;
+  font-weight: bold;
+}
+
+.reviews {
+  color: #666;
+  font-size: 0.9em;
+} 
