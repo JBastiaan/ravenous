@@ -33,6 +33,9 @@ function App() {
   return (
     <div className={styles.app}>
       <div className={styles.content}>
+        <div className={styles.titleSection}>
+          <h1 className={styles.title}>Ravenous</h1>
+        </div>
         <Searchbar onSearch={handleSearch} />
         <BusinessList businesses={businesses} />
       </div>
