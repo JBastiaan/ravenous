@@ -15,7 +15,6 @@ const defaultBusiness = {
 const Business = ({ business }) => {
   // Use default business only if business prop is undefined, null, or empty object
   const businessData = Object.keys(business || {}).length === 0 ? defaultBusiness : business;
-  console.log(businessData);
   return (
     <div className={styles.business}>
       <img 
