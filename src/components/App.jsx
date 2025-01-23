@@ -32,8 +32,10 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <Searchbar onSearch={handleSearch} />
-      <BusinessList businesses={businesses} />
+      <div className={styles.content}>
+        <Searchbar onSearch={handleSearch} />
+        <BusinessList businesses={businesses} />
+      </div>
     </div>
   );
 }
