@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import getBusinesses from '../utils/yelp';
 import Searchbar from './Searchbar';
 import BusinessList from './BusinessList';
 import styles from '../css/App.module.css';
@@ -23,11 +24,13 @@ const generateRandomBusinesses = (count) => {
 };
 
 function App() {
-  const [businesses, setBusinesses] = useState(generateRandomBusinesses(10));
+  const [businesses, setBusinesses] = useState([]);
 
-  const handleSearch = ({ term, location, sortBy }) => {
+  const handleSearch = async ({ term, location, sortBy }) => {
     console.log('Searching...', { term, location, sortBy });
-    // TODO: Implement actual search functionality
+    const businesses = await getBusinesses(term, location, sortBy);
+    console.log('setting businesses');
+    setBusinesses(businesses);
   };
 
   return (
